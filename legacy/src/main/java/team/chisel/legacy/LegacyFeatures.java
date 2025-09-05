@@ -463,34 +463,5 @@ public class LegacyFeatures {
             .model(ModelTemplates.columnEldritch("temple"))
             .build(b -> b.strength(1.5F).explosionResistance(10.0F).sound(SoundType.STONE));
 
-    public static final Map<String, BlockEntry<BlockCarvable>> TYRIAN = _FACTORY.newType(Material.METAL, "tyrian")
-            .applyTag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .applyTag(BlockTags.NEEDS_STONE_TOOL)
-            .initialProperties(() -> Blocks.IRON_BLOCK)
-            .color(MaterialColor.TERRACOTTA_CYAN)
-            .variation("shining").localizedName("Disordered Metal Bits")
-            .recipe((prov, block) -> new ShapedRecipeBuilder(block, 32)
-                    .pattern("SSS").pattern("SXS").pattern("SSS")
-                    .define('S', Tags.Items.STONE)
-                    .define('X', Tags.Items.INGOTS_IRON)
-                    .unlockedBy("has_iron", prov.has(Tags.Items.INGOTS_IRON))
-                    .save(prov))
-            .next("tyrian").localizedName("Metal Plates")
-            .next("chaotic").localizedName("Disordered Purple Bits")
-            .next("softplate").localizedName("Purple Plates")
-            .next("rust")
-            .next("elaborate").localizedName("Shiny Plates")
-            .next("routes")
-            .next("platform")
-            .next("platetiles").localizedName("Small Uneven Tiles")
-            .next("diagonal").localizedName("Diagonal Plates")
-            .next("dent")
-            .next("blueplating").localizedName("Blue Plates")
-            .next("black").localizedName("Black Scaled Plates")
-            .next("black2").localizedName("Black Strips")
-            .next("opening")
-            .next("plate") //.localizedName("Shiny Plate") TODO name conflict && FIXME temporary texture
-            .build();
-
 	public static void init() {}
 }

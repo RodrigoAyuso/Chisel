@@ -1671,5 +1671,21 @@
     "chisel:waterstone/prism",
     "chisel:waterstone/chaotic_bricks",
     "chisel:waterstone/cuts"
+    "chisel:tyrian/shining",
+    "chisel:tyrian/tyrian",
+    "chisel:tyrian/chaotic",
+    "chisel:tyrian/softplate",
+    "chisel:tyrian/rust3",
+    "chisel:tyrian/elaborate",
+    "chisel:tyrian/routes",
+    "chisel:tyrian/platform",
+    "chisel:tyrian/platetiles",
+    "chisel:tyrian/diagonal",
+    "chisel:tyrian/dent",
+    "chisel:tyrian/blueplating",
+    "chisel:tyrian/black3",
+    "chisel:tyrian/black2",
+    "chisel:tyrian/opening",
+    "chisel:tyrian/plate"
   ]
 }
